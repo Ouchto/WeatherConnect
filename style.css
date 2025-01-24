@@ -188,7 +188,9 @@ main{
     
 }
 
-
+#more_btn a {
+    text-decoration: none;
+}
 .gouche{
     background-color: #0D142A;
     width: 35%;
@@ -208,9 +210,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
     height: 90%;
     width: 90%;
 }
+
+
 .day{
     width: 100%;
     height: 14%;
