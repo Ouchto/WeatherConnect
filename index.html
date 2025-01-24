@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WeatherConnect</h1>
+        <div class="searchBar">
+            <input type="text" placeholder="search" id="input">
+            <button id="btnSearch"><img src="images/recherche.png" alt="recherche"></button>
+        </div>
+
+    </header>
+    <div id="error">
+        <p>Invalid city name</p>
+    </div>
+    <main>
+        
+        <div class="droite">
+            <div class="city_name">
+                <div>
+                    <h1 id="city">Béni Melal</h1>
+                    <h1 id="daraja">31°</h1>
+                </div>
+                <img src="images/amcharts_weather_icons_1.0.0/animated/day.svg" id="weatherIcon" alt="weatherIcon">
+            </div>
+            <div class="today">
+                <h5>TODAY'S FORECAST</h5>
+                <div class="conter">
+                    <div class="item">
+                        <p>12:00 AM</p>
+                        <img src="images/amcharts_weather_icons_1.0.0/animated/night.svg" id="twelveImage" >
+                        <h4 id="twelve">30 °C</h4>
+                    </div>
+                    <div class="item">
+                        <p>3:00 PM</p>
+                        <img src="images/amcharts_weather_icons_1.0.0/animated/day.svg" id="threeImage">
+                        <h4 id="three">30 °C</h4>
+                    </div>
+                    <div class="item">
+                        <p>6:00 PM</p>
+                        <img src="images/amcharts_weather_icons_1.0.0/animated/night.svg" id="sixImage">
+                        <h4 id="six">30 °C</h4>
+                    </div>
+                    <div class="item">
+                        <p>9:00 PM</p>
+                        <img src="images/amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg" id="nineImage" >
+                        <h4 id="nine">30 °C</h4>
+                    </div>          
+                </div>
+            </div>
+            <div class="airCon">
+                <h5>AIR CONDITINS</h5>
+                    <div class="conter">
+                    
+                        <div class="item" id="temp">
+                            <img src="images/images-removebg-preview.png" id="reel_feel_image">
+                            <div>
+                                <p>Reel Feel</p>
+                                <h3 id="reelFeel">30°</h3>
+                            </div>
+                            
+                        </div>
+                        <div class="item" id="rainChance">
+                            <img src="images/katra-removebg-preview.png" id="rain_chance_image">
+                            <div>
+                                <p>Humidity</p>
+                                <h3 id="humidity">0%</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/136712.png" id="rain_chance_image">
+                            <div>
+                                <p>Wind</p>
+                                <h3 id="wind">0.2 km/h</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="more_btn">See More</button>
+            </div>
+
+        </div>
+        <div class="gouche">
+            <h5 id="days">7-DAY FORECAST</h5>
+            <div class="day_conter">
+                <div class="day">
+                    <h4 id="Mon">Today</h4>
+                    <img src="images/amcharts_weather_icons_1.0.0/animated/cloudy-day-2.svg" id="imgDay" >
+                    <h5 id="mainDay">Sunny</h5>
+                </div>
+                <div class="day">
+                    <h4 class="dayElement">Tue</h4>
+                    <img src="images/amcharts_weather_icons_1.0.0/animated/cloudy-day-2.svg" id="imgDay2" >
+                    <h5 id="mainDay2">Sunny</h5>
+                </div>
+                <div class="day">
+                    <h4 class="dayElement">Wed</h4>
+                    <img src="images/amcharts_weather_icons_1.0.0/animated/cloudy-day-2.svg" id="imgDay3">
+                    <h5 id="mainDay3">Sunny</h5>
+                </div>
+                <div class="day">
+                    <h4 class="dayElement">Thu</h4>
+                    <img src="images/amcharts_weather_icons_1.0.0/animated/cloudy-day-2.svg" id="imgDay4" >
+                    <h5 id="mainDay4">Sunny</h5>
+                </div>
+                <div class="day">
+                    <h4 class="dayElement">Fri</h4>
+                    <img src="images/amcharts_weather_icons_1.0.0/animated/cloudy-day-2.svg" id="imgDay5">
+                    <h5 id="mainDay5">Sunny</h5>
+                </div>
+                <div class="day">
+                    <h4 class="dayElement">Sat</h4>
+                    <img src="images/amcharts_weather_icons_1.0.0/animated/cloudy-day-2.svg" id="imgDay6">
+                    <h5 id="mainDay6">Sunny</h5>
+                </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>© The Weather Company 2025, designed by Mustapha Ouchto</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
